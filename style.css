@@ -6,6 +6,17 @@
     margin-bottom: 20px;
 }
 
+.form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin: 20px;
+}
+
+.form-div > div {
+    margin: 10px;
+}
+
 li.nav-item {
     display: inline;
     float: left;
