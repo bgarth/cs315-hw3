@@ -13,7 +13,7 @@
     margin: 20px;
 }
 
-.form-div > div {
+.form-div>div {
     margin: 10px;
 }
 
@@ -97,15 +97,18 @@ li a {
     transition-delay: now;
 
 }
+
 .transition-square:hover {
     background-color: blue;
 }
+
 button {
     color: white;
     background-color: red;
     border-radius: 5px;
     margin: 10px;
 }
+
 #button-expand {
     background-color: red;
     border-radius: 5px;
@@ -115,12 +118,86 @@ button {
 
     transition: width 2s ease-out, height 2s ease-out;
 }
+
 #button-expand a {
-    color:white;
+    color: white;
 }
+
 #button-expand:hover {
     width: 120px;
     height: 80px;
 
     transition: width 2s ease-out, height 2s ease-out;
+}
+
+#animation-square1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0% {
+        background-color: blue;
+    }
+
+    25% {
+        background-color: red;
+    }
+
+    75% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+#animation-square2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode:both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mymove {
+    0% {top: 0px; left:-100px}
+    25% {top: 200px; left:-100px}
+    50% {top: 200px; left:100px}
+    75% {top: 0px; left:100px}
+    100% {top: 0px; left:-100px}
+}
+
+#animation-square3 {
+    width: 200px;
+    height: 200px;
+    background: aqua;
+    position: relative;
+    animation: rotate 5s;
+    animation-fill-mode:both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    100% {transform:rotateZ(360deg);}
+}
+
+table {
+    border: 2px, solid;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 2px, solid;
+    padding: 10pt;
 }
