@@ -214,15 +214,17 @@
         }
     }
 
-    table {
-        border: 2px, solid;
+    #first-table, #first-table th, #first-table td {
+        border: 1px solid;
+        border-collapse: collapse;
+      }
+
+    #second-table {
+        border: 1px solid;
         border-collapse: collapse;
     }
-
-    td,
-    th {
-        border: 2px, solid;
-        padding: 10pt;
+    #second-table th {
+        background-color: aqua;
+        color: black;
     }
-
 }
