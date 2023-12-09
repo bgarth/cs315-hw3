@@ -33,7 +33,7 @@
 
   <center>
     <div class="card welcome">
-      <h2 class="card-title">Welcome</h2>
+      <h2 class="card-title">Welcome <?php echo $_SESSION['username']?></h2>
       <p class="card-text">Please choose which html/css element you would like to see</p>
       <div class="card-body flex-container">
         <div class="card inner-card">
