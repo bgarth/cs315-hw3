@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <header>
@@ -26,6 +30,12 @@
           <li class="nav-item">
             <a class="nav-link" href="forms.html" aria-haspopup="true" aria-expanded="false">Forms</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shoppingcart/index.php" aria-haspopup="true" aria-expanded="false">Online Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php" aria-haspopup="true" aria-expanded="false">Logout</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -34,7 +44,7 @@
   <center>
     <div class="card welcome">
       <h2 class="card-title">Welcome <?php echo $_SESSION['username']?></h2>
-      <p class="card-text">Please choose which html/css element you would like to see</p>
+      <p class="card-text">Click an item you would like to view.</p>
       <div class="card-body flex-container">
         <div class="card inner-card">
           <div class="card-body inner-card flex-fill">

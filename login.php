@@ -3,15 +3,7 @@
 
 session_start();
 include "db_conn.php";
-/*
-if(issset($_POST['username']) && isset($_POST['password'])) {
-    function validate($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspeacialchars($data);
-        return $data;
-    }
-}*/
+
 
 $username = $_POST['username'];
 $password = $_POST['password'];
